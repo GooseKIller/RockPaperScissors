@@ -66,7 +66,7 @@ int main()
         cout << endl;
         cout << "YOU:" << youScore << " COMPUTER:" << aiScore<<endl;
     }
-    switch (score)//coose total winner
+    switch (score)//choose total winner
     {
     case 1:
         cout << "YOU Win!!";
