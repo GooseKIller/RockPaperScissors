@@ -5,9 +5,10 @@ int main()
 {   
     srand(time(NULL));
     
-    int you = 0, ai = rand()%3+1,aiScore=0, youScore=0,score=0;
+    int you = 0,aiScore=0,youScore=0,score=0;
     cout << "Game Comands\n1=Rock\n2=Paper\n3=Scissors\n\n";
     for (int i = 0; i < 3; i++) {
+        int ai = rand()%3+1;
         if (aiScore == 2 && youScore==2) {
             score = 2;
             break;
