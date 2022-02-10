@@ -16,7 +16,6 @@ int choise(int player) {
     default:
         cout << "Ops wrong command";
     }
-    return ans;
 }
 int main()
 {   
