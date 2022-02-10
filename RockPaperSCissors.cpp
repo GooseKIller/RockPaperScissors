@@ -40,10 +40,10 @@ int main()
         }
         cout << "Round:"<<i+1<<"/3"<<endl;//rounds
         cout << "YOU:"; cin >> you;
-        cout << choise(you);
+        choise(you);
         cout << endl;
         cout << "COMPUTER:" << ai << "\n";
-		cout << choise(ai);
+	choise(ai);
         cout << endl;
         if (you == 1 && ai == 3 || you == 2 && ai == 1 || you == 3 && ai == 2) {//choose round winner
             cout << "YOU Win!!";
