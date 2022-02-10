@@ -1,11 +1,29 @@
 ﻿#include <iostream>
 #include <ctime>
 using namespace std;
+int choise(int player) {
+    switch (player)//player choise
+    {
+    case 1:
+        cout << "Rock";
+        break;
+    case 2:
+        cout << "Paper";
+        break;
+    case 3:
+        cout << "Scissors";
+        break;
+    default:
+        cout << "Ops wrong command";
+    }
+    return ans;
+}
 int main()
 {   
     srand(time(NULL));
     
     int you = 0,aiScore=0,youScore=0,score=0;
+	string s;
     cout << "Game Comands\n1=Rock\n2=Paper\n3=Scissors\n\n";
     for (int i = 0; i < 3; i++) {
         int ai = rand()%3+1;
@@ -23,34 +41,10 @@ int main()
         }
         cout << "Round:"<<i+1<<"/3"<<endl;//rounds
         cout << "YOU:"; cin >> you;
-        switch (you)//player choise
-        {
-        case 1:
-            cout << "Rock";
-            break;
-        case 2:
-            cout << "Paper";
-            break;
-        case 3:
-            cout << "Scissors";
-            break;
-        default:
-            cout << "Ops wrong command";
-        }
+        cout << choise(you);
         cout << endl;
         cout << "COMPUTER:" << ai << "\n";
-        switch (ai)//comuter choise
-        {
-        case 1:
-            cout << "Rock";
-            break;
-        case 2:
-            cout << "Paper";
-            break;
-        case 3:
-            cout << "Scissors";
-            break;
-        }
+		cout << choise(ai);
         cout << endl;
         if (you == 1 && ai == 3 || you == 2 && ai == 1 || you == 3 && ai == 2) {//choose round winner
             cout << "YOU Win!!";
@@ -80,5 +74,5 @@ int main()
         break;
     
     }
-
+return 0;
 }
