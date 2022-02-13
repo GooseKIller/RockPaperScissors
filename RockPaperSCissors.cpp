@@ -1,5 +1,6 @@
-﻿#include <iostream>
+#include <iostream>
 #include <ctime>
+#include <time.h>
 using namespace std;
 int choise(int player) {
     switch (player)//player choise
