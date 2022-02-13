@@ -1,7 +1,9 @@
 #include <iostream>
 #include <ctime>
 #include <time.h>
+
 using namespace std;
+
 int choise(int player) {
     switch (player)//player choise
     {
@@ -18,6 +20,7 @@ int choise(int player) {
         cout << "Ops wrong command";
     }
 }
+
 int main()
 {   
     srand(time(NULL));
