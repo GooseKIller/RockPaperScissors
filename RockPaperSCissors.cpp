@@ -5,7 +5,7 @@
 using namespace std;
 
 int choise(int player) {
-    switch (player)//player choise
+    switch (player)
     {
     case 1:
         cout << "Rock";
@@ -42,14 +42,14 @@ int main()
             score = 3;
             break;
         }
-        cout << "Round:"<<i+1<<"/3"<<endl;//rounds
+        cout << "Round:"<<i+1<<"/3"<<endl;
         cout << "YOU:"; cin >> you;
         choise(you);
         cout << endl;
         cout << "COMPUTER:" << ai << "\n";
 	choise(ai);
         cout << endl;
-        if (you == 1 && ai == 3 || you == 2 && ai == 1 || you == 3 && ai == 2) {//choose round winner
+        if (you == 1 && ai == 3 || you == 2 && ai == 1 || you == 3 && ai == 2) {
             cout << "YOU Win!!";
             youScore++;
         }
@@ -64,7 +64,7 @@ int main()
         cout << endl;
         cout << "YOU:" << youScore << " COMPUTER:" << aiScore<<endl;
     }
-    switch (score)//choose total winner
+    switch (score)
     {
     case 1:
         cout << "YOU Win!!";
